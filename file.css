@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #051923;
+}
+header a{
+
+    text-decoration: none;
+    
+    font-family: 'Lexend Deca', sans-serif;
+    color: #5486a3;
+    font-size: 3.5rem;
+   
+
+}
+
+.box-container{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 10rem 4rem 6rem;
+    grid-template-areas: 
+    'one one one one one'
+    'two two two two two'
+    'three three three three three'
+    'four four four four four'
+    'five five five five five';
+    width:50%;
+    margin: 7rem auto;
+}
+.box{
+    
+    padding: 2rem;
+}
+.box-1{
+    background-color: #006494;
+    grid-area: one;
+}
+.box-2{
+    background-color: #0582ca;
+    grid-area: two;
+}
+.box-3{
+    background-color: #003554;
+    grid-area: three;
+}
+.box-4{
+    background-color: #00a6fb;
+    grid-area: four;
+}
+.box-5{
+    background-color: #00a6fb;
+    grid-area: five;
+}
+
+
+@media screen and (min-width:376px)  {
+    .box-container{
+        grid-template-areas: 
+        'one one one two two'
+        'three three four four four'
+        'three three five five five ';
+    }
+}
