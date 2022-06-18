@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --bright-orange:hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --x-dark-cyan:hsl(179, 100%, 13%);
+    --white:hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: var(--light-gray);
+}
+
+header a{
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--x-dark-cyan);
+    font-size: 4rem;
+   
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    
+    
+}
+.car-container{
+
+    width:100%;
+    max-width: 800px;
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin: 0 auto;
+    padding: 0 2rem;
+    
+    
+}
+.cars{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--white);
+    text-align: left;
+    padding: 3rem 2.5rem;
+    flex: 1 1 0px;
+    align-items: stretch;
+        width: 100%;
+        
+        max-height: 370px;
+    
+}
+
+.sedan{
+    background-color: var(--bright-orange);
+    border-radius: .5rem 0 0 0.5rem;
+}
+.suv{
+    background-color: var(--dark-cyan);
+}
+.luxury{
+    background-color: var(--x-dark-cyan);
+    border-radius: 0 .5rem 0.5rem 0rem;
+
+}
+
+
+.sedan .card-button a{
+    color: var(--bright-orange);
+}
+.suv .card-button a{
+    color: var(--dark-cyan);
+}
+.luxury .card-button a{
+    color: var(--x-dark-cyan);
+}
+.cars h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--light-gray);
+    text-transform: uppercase;
+}
+.cars p{
+    height: 12rem;
+}
+.card-button{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card-button a{
+    
+    margin: 0 auto;
+    text-decoration: none;
+    border: 1px solid #eaf4f4;
+    padding:.7rem 1rem;
+    
+    background-color: var(--light-gray);
+    border-radius:2rem;
+    
+    
+}
+.card-button:hover ,
+.card-button a:hover{
+    background-color: transparent;
+    color: var(--light-gray);
+    
+}
+.card-button a:hover{
+    color: var(--light-gray);
+}
+
+@media screen and (max-width:607px) {
+    .sedan{
+        border-radius: 0;
+    }
+    .suv{
+        border-radius: 0;
+    }
+    .luxury{
+        border-radius: 0;
+    }
+}
+
